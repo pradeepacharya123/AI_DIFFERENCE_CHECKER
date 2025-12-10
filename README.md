@@ -11,6 +11,7 @@ Features:
 
 Tech Stack:
 Frontend: React  
+Backend:Flask
 AI: HuggingFace / OpenAI  
 Diff Library: diff-match-patch / difflib  
 
