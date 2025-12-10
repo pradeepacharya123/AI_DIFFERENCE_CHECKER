@@ -1,0 +1,51 @@
+.stats-bar {
+  width: 100%;
+  background: #111;                /* Full dark background */
+  padding: 20px 0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Each stat box */
+.stat-box {
+  background: rgba(255, 255, 255, 0.08);   /* Glassy shaded boxes */
+  backdrop-filter: blur(6px);
+  padding: 18px 22px;
+  border-radius: 14px;
+  min-width: 180px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.45);
+}
+
+/* Title text */
+.stat-title {
+  display: block;
+  color: #ccc;
+  font-size: 15px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* Numbers */
+.stat-number {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+/* Color accents */
+.stat-number.add {
+  color: #4dff88; /* neon green */
+}
+
+.stat-number.del {
+  color: #ff5f5f; /* soft red */
+}

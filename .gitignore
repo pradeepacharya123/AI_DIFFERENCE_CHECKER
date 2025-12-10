@@ -1,0 +1,50 @@
+# -------------------------
+# FRONTEND (React + Vite)
+# -------------------------
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# Log files
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/pnpm-debug.log*
+
+# -------------------------
+# BACKEND (Python)
+# -------------------------
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+
+# Virtual environments
+backend/venv/
+backend/env/
+
+# Environment files
+backend/.env
+backend/*.env
+
+# Uploaded files
+backend/uploads/
+
+# Python caches
+*.pyc
+__pycache__/
+
+# -------------------------
+# OS / IDE
+# -------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Misc
+# -------------------------
+*.log

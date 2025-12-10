@@ -1,0 +1,13 @@
+/* Make the whole site background black */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000;   /* black background */
+  color: #fff;              /* white text (optional) */
+}
+
+/* Ensures all pages inherit black bg */
+* {
+  box-sizing: border-box;
+}

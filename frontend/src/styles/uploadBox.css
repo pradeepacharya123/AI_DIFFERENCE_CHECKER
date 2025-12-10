@@ -1,0 +1,20 @@
+.upload-box {
+  display: flex;
+  justify-content: center;
+}
+
+.upload-btn {
+  background: #3b82f6;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.upload-btn:hover {
+  background: #2563eb;
+  transform: scale(1.04);
+}
