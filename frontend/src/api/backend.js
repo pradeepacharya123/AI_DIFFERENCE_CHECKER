@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = "http://127.0.0.1:5000/api"; // Flask backend
+const API_BASE = "https://ai-difference-checker-1.onrender.com"; // Flask backend
 
 export const uploadDocuments = async (fileA, fileB) => {
   const formData = new FormData();
