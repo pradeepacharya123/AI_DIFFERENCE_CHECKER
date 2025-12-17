@@ -1,9 +1,9 @@
 import axios from "axios";
 
-// Set your Render backend URL here
+// Render backend base URL
 const API_BASE = "https://ai-difference-checker-6.onrender.com/api";
 
-// Function to upload two documents
+// Upload two documents
 export const uploadDocuments = async (fileA, fileB) => {
   try {
     const formData = new FormData();
@@ -18,18 +18,27 @@ export const uploadDocuments = async (fileA, fileB) => {
 
     return response.data;
   } catch (error) {
-    console.error("Error uploading documents:", error.response || error.message);
+    console.error(
+      "Error uploading documents:",
+      error.response?.data || error.message
+    );
     throw error;
   }
 };
 
-// Function to get AI summary for a diff
+// Get AI summary (FIXED)
 export const getSummary = async (diffText) => {
   try {
-    const response = await axios.post(`${API_BASE}/summary`, { diff: diffText });
+    const response = await axios.post(`${API_BASE}/summary`, {
+      diff_text: diffText,   // ✅ MUST match backend
+    });
+
     return response.data;
   } catch (error) {
-    console.error("Error getting summary:", error.response || error.message);
+    console.error(
+      "Error getting summary:",
+      error.response?.data || error.message
+    );
     throw error;
   }
 };
